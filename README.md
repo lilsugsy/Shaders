@@ -41,9 +41,11 @@ this.scene.add(cube)
 ```        
 
 ### 4 - update uniform each frame using Deltatime
+```js
 this.time = this.experience.time
 ...
 update()
 {
 this.uniforms[ 'time' ].value += 0.2 * this.time.delta*0.01;
 }
+``` 
