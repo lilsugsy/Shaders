@@ -44,7 +44,7 @@ const cube = new THREE.Mesh( new THREE.TorusGeometry( 1, 0.3, 30, 30 ), material
 this.scene.add(cube) 
 ```        
 
-### 4 - update uniform each frame using Deltatime
+### 4 - Update uniform each frame using Deltatime
 ```js
 this.time = this.experience.time
 ...
