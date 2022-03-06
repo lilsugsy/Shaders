@@ -4,7 +4,7 @@ Three.js Shaders
 ## How to use shaders (lava example)
 
 ### 1 - Import
-Place the shaders in a folder of your chouse.
+Place the shaders in a folder of your choice.
 Then import both the fragment and vertex shaders at the top of your script
 
 ```js
