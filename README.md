@@ -5,7 +5,7 @@ Three.js Shaders
 
 ### 1 - import
 
-import both the fragment and vertext shaders at the top of your script
+import both the fragment and vertex shaders at the top of your script
 
 ```js
 import fragment from './Shaders/lavaFragmentShader.glsl'
