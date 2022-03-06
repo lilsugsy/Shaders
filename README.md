@@ -17,9 +17,12 @@ this.vertexShader = vertex
 
 ### 2 - Set uniforms
 
-Set the uniforms (these are the variables that get set/passed into the shaders)
+Set the uniforms (these are the variables that get set/passed into the shaders).
+Remember to use a texture loader to load the textures.
 
 ```js
+this.loader = new THREE.TextureLoader();
+
 this.uniforms = {
   'fogDensity': { value: 0.01 },
   'fogColor': { value: new THREE.Vector3( 0, 0, 0 ) },
@@ -28,6 +31,9 @@ this.uniforms = {
   'texture1': { value: this.loader.load( 'assets/cloud.png' ) },
   'texture2': { value: this.loader.load( 'assets/lavatile.jpg' ) }
 };
+
+this.uniforms[ 'texture1' ].value.wrapS = this.uniforms[ 'texture1' ].value.wrapT = THREE.RepeatWrapping;
+this.uniforms[ 'texture2' ].value.wrapS = this.uniforms[ 'texture2' ].value.wrapT = THREE.RepeatWrapping;
 ```
 
 ### 3 - Add material to mesh
