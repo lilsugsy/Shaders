@@ -3,16 +3,19 @@ Three.js Shaders
 
 ## how to use (lava example)
 
-### 1 - import
-
-import both the fragment and vertex shaders at the top of your script
+### 1 - Import
+Place the shaders in a folder of your chouse.
+Then import both the fragment and vertex shaders at the top of your script
 
 ```js
 import fragment from './Shaders/lavaFragmentShader.glsl'
 import vertex from './Shaders/lavaVertexShader.glsl'
+
+this.fragmentShader = fragment
+this.vertexShader = vertex
 ```
 
-### 2 - set uniforms
+### 2 - Set uniforms
 
 Set the uniforms (these are the variables that get set/passed into the shaders)
 
@@ -28,6 +31,7 @@ this.uniforms = {
 ```
 
 ### 3 - Add material to mesh
+Create a shader material, settings the uniforms, vertex and fragment shaders
 
 ```js
 const material = new THREE.ShaderMaterial( {
