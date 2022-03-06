@@ -1,7 +1,7 @@
 # Shaders
 Three.js Shaders
 
-## how to use (lava example)
+## How to use shaders (lava example)
 
 ### 1 - Import
 Place the shaders in a folder of your chouse.
