@@ -94,8 +94,7 @@ update()
 
         if(this.cubeCamera) {
             this.cubeCamera.update(this.renderer, this.scene); 
-        }
-       // this.fresnelUniforms[ 'time' ].value += 0.2 * this.time.delta*0.005;
+        }      
     }
 ```    
 
