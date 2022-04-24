@@ -80,7 +80,7 @@ setOuterSphere()
     
 ```
 
-## update each frame
+## Update each frame
 
 We need to update the time + tCube(reflection/refraction environment map) each frame.
 
